@@ -29,30 +29,43 @@ fetch('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_k
     let card=document.createElement("div")
     card.className="card"
     let imh =document.createElement("img")
-    let h3 =document.createElement("h4")
-    h3.id="name"+i
-    let p=document.createElement("p")
-    let text=""+json.results[i].title+", "+json.results[i].release_date;
-    h3.innerText=text
     imh.style.height="300px"
     imh.style.width="200px"
     imh.src="https://image.tmdb.org/t/p/w500/"+json.results[i].poster_path
+    divitem1=document.createElement("div")
+    divitem1.className="item1"
+    divitem1.append(imh)
+    card.append(divitem1)
+
+    let h3 =document.createElement("h4")
+    let text=""+json.results[i].title+", "+json.results[i].release_date;
+    h3.innerText=text
+    h3.id="name"+i
+    divitem2=document.createElement("div")
+    divitem2.className="item2"
+    divitem2.append(h3)
+    card.append(divitem2)
+
+    // let p=document.createElement("p")
     let icone=document.createElement("i")
     icone.className="fa fa-thumbs-up";
     icone.id="icone"+i
-    let br=document.createElement("br")
-    let br2=document.createElement("br")
-    p.append(icone)
-    card.append(imh)
-    card.append(h3)
-    card.append(p)
-    card.append(br)
-    card.append(br2)
+    // p.append(icone)
+    divitem3=document.createElement("div")
+    divitem3.className="item3"
+    divitem3.append(icone)
+    card.append(divitem3)
+
+
     let a5=document.createElement("a")
     a5.className="button"
     a5.href="#popup"+i
     a5.innerText="More"
-    card.append(a5)
+
+    divitem4=document.createElement("div")
+    divitem4.className="item4"
+    divitem4.append(a5)
+    card.append(divitem4)
     dc1.append(row)
     row.append(colo)
     colo.append(card)
@@ -107,32 +120,43 @@ fetch('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_k
     let card=document.createElement("div")
     card.className="card"
     let imh =document.createElement("img")
-    let h3 =document.createElement("h4")
-    h3.id="name"+i
-    let p=document.createElement("p")
-    let text=""+json.results[i].title+", "+json.results[i].release_date;
-    // p.innerText=json.results[i].release_date
-    h3.innerText=text
     imh.style.height="300px"
     imh.style.width="200px"
     imh.src="https://image.tmdb.org/t/p/w500/"+json.results[i].poster_path
-    imh.href="#popup"+i
+    divitem1=document.createElement("div")
+    divitem1.className="item1"
+    divitem1.append(imh)
+    card.append(divitem1)
+
+    let h3 =document.createElement("h4")
+    let text=""+json.results[i].title+", "+json.results[i].release_date;
+    h3.innerText=text
+    h3.id="name"+i
+    divitem2=document.createElement("div")
+    divitem2.className="item2"
+    divitem2.append(h3)
+    card.append(divitem2)
+
+    // let p=document.createElement("p")
     let icone=document.createElement("i")
     icone.className="fa fa-thumbs-up";
     icone.id="icone"+i
-    let br=document.createElement("br")
-    let br2=document.createElement("br")
-    p.append(icone)
-    card.append(imh)
-    card.append(h3)
-    card.append(p)
-    card.append(br)
-    card.append(br2)
+    // p.append(icone)
+    divitem3=document.createElement("div")
+    divitem3.className="item3"
+    divitem3.append(icone)
+    card.append(divitem3)
+
+
     let a5=document.createElement("a")
     a5.className="button"
     a5.href="#popup"+i
     a5.innerText="More"
-    card.append(a5)
+
+    divitem4=document.createElement("div")
+    divitem4.className="item4"
+    divitem4.append(a5)
+    card.append(divitem4)
     dc1.append(row2)
     row2.append(colo)
     colo.append(card)
@@ -185,33 +209,43 @@ fetch('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_k
     let card=document.createElement("div")
     card.className="card"
     let imh =document.createElement("img")
-    let h3 =document.createElement("h4")
-    let p=document.createElement("p")
-    let p2=document.createElement("p")
-    let text=""+json.results[i].title+", "+json.results[i].release_date;
-    let icone=document.createElement("i")
-    icone.className="fa fa-thumbs-up";
-    p.append(icone)
-    h3.innerText=text
-    h3.id="name"+i
     imh.style.height="300px"
     imh.style.width="200px"
     imh.src="https://image.tmdb.org/t/p/w500/"+json.results[i].poster_path
+    divitem1=document.createElement("div")
+    divitem1.className="item1"
+    divitem1.append(imh)
+    card.append(divitem1)
+
+    let h3 =document.createElement("h4")
+    let text=""+json.results[i].title+", "+json.results[i].release_date;
+    h3.innerText=text
+    h3.id="name"+i
+    divitem2=document.createElement("div")
+    divitem2.className="item2"
+    divitem2.append(h3)
+    card.append(divitem2)
+
+    // let p=document.createElement("p")
+    let icone=document.createElement("i")
     icone.className="fa fa-thumbs-up";
     icone.id="icone"+i
-    let br=document.createElement("br")
-    let br2=document.createElement("br")
-    p.append(icone)
-    card.append(imh)
-    card.append(h3)
-    card.append(p)
-    card.append(br)
-    card.append(br2)
+    // p.append(icone)
+    divitem3=document.createElement("div")
+    divitem3.className="item3"
+    divitem3.append(icone)
+    card.append(divitem3)
+
+
     let a5=document.createElement("a")
     a5.className="button"
     a5.href="#popup"+i
     a5.innerText="More"
-    card.append(a5)
+
+    divitem4=document.createElement("div")
+    divitem4.className="item4"
+    divitem4.append(a5)
+    card.append(divitem4)
     dc1.append(row3)
     row3.append(colo)
     colo.append(card)
@@ -284,33 +318,43 @@ fetch('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_k
     let card=document.createElement("div")
     card.className="card"
     let imh =document.createElement("img")
-    let h3 =document.createElement("h4")
-    let p=document.createElement("p")
-    let p2=document.createElement("p")
-    let text=""+data[i].title+", "+data[i].release_date;
-    let icone=document.createElement("i")
-    icone.className="fa fa-thumbs-up";
-    p.append(icone)
-    h3.innerText=text
-    h3.id="name"+i
     imh.style.height="300px"
     imh.style.width="200px"
     imh.src="https://image.tmdb.org/t/p/w500/"+data[i].poster_path
+    divitem1=document.createElement("div")
+    divitem1.className="item1"
+    divitem1.append(imh)
+    card.append(divitem1)
+
+    let h3 =document.createElement("h4")
+    let text=""+data[i].title+", "+data[i].release_date;
+    h3.innerText=text
+    h3.id="name"+i
+    divitem2=document.createElement("div")
+    divitem2.className="item2"
+    divitem2.append(h3)
+    card.append(divitem2)
+
+    // let p=document.createElement("p")
+    let icone=document.createElement("i")
     icone.className="fa fa-thumbs-up";
     icone.id="icone"+i
-    let br=document.createElement("br")
-    let br2=document.createElement("br")
-    p.append(icone)
-    card.append(imh)
-    card.append(h3)
-    card.append(p)
-    card.append(br)
-    card.append(br2)
+    // p.append(icone)
+    divitem3=document.createElement("div")
+    divitem3.className="item3"
+    divitem3.append(icone)
+    card.append(divitem3)
+
+
     let a5=document.createElement("a")
     a5.className="button"
     a5.href="#popup"+i
     a5.innerText="More"
-    card.append(a5)
+
+    divitem4=document.createElement("div")
+    divitem4.className="item4"
+    divitem4.append(a5)
+    card.append(divitem4)
     dc2.append(row)
     row.append(colo)
     colo.append(card)
@@ -404,34 +448,45 @@ function Favorite(data){
           colo.className="column";
           let card=document.createElement("div")
           card.className="card"
+
+
           let imh =document.createElement("img")
-          let h3 =document.createElement("h4")
-          let p=document.createElement("p")
-          let p2=document.createElement("p")
-          let text=""+data[i].title+", "+data[i].release_date;
-          let icone=document.createElement("i")
-          icone.className="fa fa-thumbs-up";
-          p.append(icone)
-          h3.innerText=text
-          h3.id="name"+i
           imh.style.height="300px"
           imh.style.width="200px"
           imh.src="https://image.tmdb.org/t/p/w500/"+data[i].poster_path
+          divitem1=document.createElement("div")
+          divitem1.className="item1"
+          divitem1.append(imh)
+          card.append(divitem1)
+
+
+          let h3 =document.createElement("h4")
+          let text=""+data[i].title+", "+data[i].release_date;
+          h3.innerText=text
+          h3.id="name"+i
+          divitem2=document.createElement("div")
+          divitem2.className="item2"
+          divitem2.append(h3)
+          card.append(divitem2)
+
+          
+          let icone=document.createElement("i")
           icone.className="fa fa-thumbs-up";
           icone.id="icone"+i
-          let br=document.createElement("br")
-          let br2=document.createElement("br")
-          p.append(icone)
-          card.append(imh)
-          card.append(h3)
-          card.append(p)
-          card.append(br)
-          card.append(br2)
+          divitem3=document.createElement("div")
+          divitem3.className="item3"
+          divitem3.append(icone)
+          card.append(divitem3)
+
+
           let a5=document.createElement("a")
           a5.className="button"
           a5.href="#popup"+i
           a5.innerText="More"
-          card.append(a5)
+          divitem4=document.createElement("div")
+          divitem4.className="item4"
+          divitem4.append(a5)
+          card.append(divitem4)
           dc3.append(row)
           row.append(colo)
           colo.append(card)
