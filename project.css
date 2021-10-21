@@ -12,11 +12,15 @@
     float: left;
     width: 25%;
     padding: 0 10px;
+    color: white;
   }
   
   /* Remove extra left and right margins, due to padding */
   .row {margin: 0 -5px;
-    padding-top: 20px;}
+    padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;}
+    
   
   /* Clear floats after the columns */
   .row:after {
@@ -94,10 +98,11 @@ header{
   user-select: none;
   color: #2c2727;
   /* float: right; */
+  margin-right: 15px;
 }
 
 .fa:hover {
-  color: darkblue;
+  color: orange;
 }
 
 /*  */
